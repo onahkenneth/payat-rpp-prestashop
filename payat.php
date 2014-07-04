@@ -16,7 +16,12 @@ class PayAt extends PaymentModule
     
     public function install()
     {
-      
+      if(!parent::install()
+      	|| !$this->registerHook('header')
+      	|| !$this->registerHook('payment')
+      	|| !$this->installCurrency())
+      	return false;
+      return true;
     }
     
     public function uninstall()
