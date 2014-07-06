@@ -72,5 +72,14 @@ class PayAt extends PaymentModule
     {
       
     }
+    
+    public function displayMessage()
+    {
+    	$this->_html .= '
+    			<div class="conf confirm">
+    				<img src"../img/admin/ok.gif" alt="'.$this->l('Confirmation').'" />
+    						'.$this->l('Module settings updated').'
+    			</div>';
+    }
 }
 ?>
