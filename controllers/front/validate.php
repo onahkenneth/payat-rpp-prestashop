@@ -1,6 +1,7 @@
 <?php
 
-class PayatValidateModuleFrontController extends ModuleFrontController
+<<<<<<< HEAD
+class PayAtValidateModuleFrontController extends ModuleFrontController
 {
 	/*
 	 * @see FrontController::postProcess()
@@ -91,6 +92,13 @@ class PayatValidateModuleFrontController extends ModuleFrontController
 				return $this->setTemplate('cancel.tpl');
 			}
 		}
+=======
+class PayAtValidationModuleFrontController extends ModuleFrontController
+{
+	public function postProcess()
+	{
+		
+>>>>>>> FETCH_HEAD
 	}
 }
 ?>
